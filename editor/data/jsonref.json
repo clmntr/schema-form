@@ -1,0 +1,18 @@
+{
+  "schema": {
+    "id": "http://some.site.somewhere/entry-schema#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "local and remote schema resolution",
+    "type": "object",
+    "properties": {
+      "local": { "$ref": "#/definitions/local" }
+    },
+    "definitions": {
+      "local": {
+        "title": "A locally defined input",
+        "type": "string"
+      }
+    }
+  },
+  "form": [ "local" ]
+}
